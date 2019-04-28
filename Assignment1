@@ -22,3 +22,7 @@ books.with.review <- paste(books, book.reviews)
 print(books.with.review)
 books.without.four <- books [-4]
 print(books.without.four)
+long.titles <- str_count(books, boundary(type = c(character > 15)
+which.are.long <- books[long.titles]
+print(which.are.long)
+
